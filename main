@@ -1,0 +1,72 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+direction1= input("Oh No! You are lost on the island without your map and you've reached a fork in the road. You don't know why way is the right way but you have to decide. Where do you want to go? Type 'left' or 'right'")
+print('''.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+.            _.,.__       .                                   .
+.           ((o\\o\))     .                                   .
+.     .-.    `  \\``      .    A tropical island              .
+.  __(   )___.o"^^".,___  .                                   .
+.     ===    ~~~~~~~~     .                                   .
+.      ==             ldb .                                   .
+.       =                 .                                   .
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+''')
+if direction1.lower()=="left":
+    direction2= input("You enter the light forest and walk for a while.\nOh! Look! You've reached a lake. What do you want to do? Type 'wait' or 'swim'")
+    print('''                  _
+             .''.' \    _  __
+ ___         './    '. ' `'  `
+    '._______.'       \
+                       '.__________
+                                   '-.____________
+ _________________________________________________'.__________________
+                                      ____________.''')     
+    if direction2.lower()=='wait':
+      direction3= input("Luckly, a boat passed by and you crossed the lake safely.Now though, there is another problem in the form of three mysterious doors. The door to the treasure is among them.Pick a door. Type 'red', 'blue', or 'yelllow' to pick a door")
+      print('''            __________
+           |  __  __  |
+           | |  ||  | |
+           | |  ||  | |
+           | |__||__| |
+           |  __  __()|
+           | |  ||  | |
+           | |  ||  | |
+           | |  ||  | |
+           | |  ||  | |
+           | |__||__| |
+ejm        |__________|
+''')
+      if direction3.lower()=="yellow":
+        print("Hurray! You've won.")
+      else:
+        print("Dun Dun Dun. You almost made it. You died though.\nGame Over.")
+    else:
+      print("Oh No! You got eaten by alligators as you crossed the lake. You died! Dun Dun Dun.")
+else:
+  print("Oh No! You accidentally entered the dark forest and got chased by wolves. You died! Dun Dun Dun.")
